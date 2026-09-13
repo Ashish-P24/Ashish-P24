@@ -32,13 +32,13 @@ Applied ML              →  Computer Vision · Prediction · Data Pipelines
 
 | | |
 |---|---|
-| 🎓 **Education** | B.Tech CSE · VIT · 2023–2027 |
-| 💼 **Experience** | SDE Intern · Aditya Birla Group |
-| ⚙️ **Backend** | Java · Spring Boot · Python · Node.js |
-| 🖥️ **Frontend** | React · TypeScript · Next.js · Tailwind |
-| ☁️ **Cloud** | AWS · Docker · Vercel · Render |
-| 🗄️ **Data** | PostgreSQL · MySQL · DynamoDB |
-| 🤖 **AI/ML** | TensorFlow · OpenCV · Scikit-learn |
+| **Education** | B.Tech CSE · VIT · 2023–2027 |
+| **Experience** | SDE Intern · Aditya Birla Group |
+| **Backend** | Java · Spring Boot · Python · Node.js |
+| **Frontend** | React · TypeScript · Next.js · Tailwind |
+| **Cloud** | AWS · Docker · Vercel · Render |
+| **Data** | PostgreSQL · MySQL · DynamoDB |
+| **AI/ML** | TensorFlow · OpenCV · Scikit-learn |
 
 </div>
 
@@ -57,10 +57,10 @@ Applied ML              →  Computer Vision · Prediction · Data Pipelines
 
 </div>
 
-> ⚠️ Replace `Ashish-P24` above only if your GitHub username differs from the repo owner — these are live, auto-updating, no manual editing required.
+> Replace `Ashish-P24` above only if your GitHub username differs from the repo owner — these are live, auto-updating, no manual editing required.
 
 <details>
-<summary><b>🐍 Add the animated contribution snake (click for setup)</b></summary>
+<summary><b>Add the animated contribution snake (click for setup)</b></summary>
 <br/>
 
 This generates a snake that "eats" your contribution graph — a real animated SVG, regenerated daily by GitHub Actions.
@@ -119,7 +119,7 @@ React SPA → Spring Boot REST API (Auth · Inventory · Suppliers · Orders · 
 
 **Stack:** `Java` `Spring Boot` `React` `AWS` `DynamoDB` `S3` `Docker` `JWT`
 
-**[→ Backend Repository](https://github.com/Ashish-P24/IntelliStock-Backend)**
+**[→ Backend Repository](https://github.com/Ashish-P24/IntelliStock-Backend)** · **[→ Frontend Repository](https://github.com/Ashish-P24/IntelliStock-Frontend)**
 
 </details>
 
@@ -141,6 +141,70 @@ Machine Fleet → ICMP Health Checks → Scheduled Monitoring Engine → (Health
 **Stack:** `Java` `Maven` `Jakarta Mail` `ICMP` `JSON` `Excel` `HTML/CSS/JS`
 
 **[→ Repository](https://github.com/Ashish-P24/Machine-Status-Monitoring-System)**
+
+</details>
+
+<details>
+<summary><b>04 · Document Summarizer</b> — AI document intelligence app: PDFs and images to structured, executive-style reports</summary>
+<br/>
+
+```text
+Upload (PDF/Image) → Validation → pdf-parse / Tesseract.js OCR → Extracted Text → Google Gemini → Structured Report + Metadata
+```
+
+**Highlights**
+- Multi-format ingestion: PDF, PNG, JPG, WebP, BMP, TIFF (20MB cap)
+- Server-side PDF text extraction and OCR for scanned/image documents
+- Adjustable summary depth: short / medium / long
+- Configurable Gemini models with a local fallback synthesis engine when no API key is set
+- Reports exportable as Markdown, copy, or print-to-PDF
+- Next.js App Router architecture with a fully typed API route
+
+**Stack:** `Next.js` `TypeScript` `React` `Tailwind CSS` `Google Gemini` `Tesseract.js` `pdf-parse`
+
+**[→ Repository](https://github.com/Ashish-P24/Document-Summarizer)**
+
+</details>
+
+<details>
+<summary><b>05 · HITL Adaptive Verification Framework for LLMs</b> — Risk-based routing between automated acceptance and human review</summary>
+<br/>
+
+```text
+Question → Gemini (or offline simulator) → LLM Response → Feature Extraction → Random Forest Risk Classifier → Risk Probability → Router → AUTO_ACCEPT / HUMAN_REVIEW
+```
+
+**Highlights**
+- Random Forest risk classifier: 94.44% test accuracy, 0.9861 ROC-AUC on a 180-sample synthetic dataset
+- Feature set: question length, response length, word count, uncertainty-language count
+- Human feedback loop backed by SQLite, feeding an adaptive retraining pipeline with safe deploy/rollback
+- Statistical data-drift monitoring via KS-test
+- 5-tab Streamlit interface for verification and human review
+
+**Stack:** `Python` `Scikit-learn` `Google Gemini` `Pandas` `NumPy` `Streamlit` `SQLite`
+
+**[→ Repository](https://github.com/Ashish-P24/hitl-llm-verification)**
+
+</details>
+
+<details>
+<summary><b>06 · GridSense</b> — Smart energy monitoring and grid management simulation</summary>
+<br/>
+
+```text
+Smart Meter Simulator (Spring Boot @Scheduled) → Spring Boot REST API → PostgreSQL → React Dashboard
+```
+
+**Highlights**
+- Simulated real-time energy readings (every 5s) with zero hardware dependency
+- Peak-load detection and abnormal-usage alerts (>150% of historical average)
+- Demand forecasting via 7-day moving average
+- Three role-based dashboards: Consumer, Grid Operator, System Administrator
+- JWT authentication with BCrypt password hashing
+
+**Stack:** `Java` `Spring Boot` `Spring Security` `PostgreSQL` `React` `Recharts`
+
+**[→ Repository](https://github.com/Ashish-P24/GridSense)**
 
 </details>
 
